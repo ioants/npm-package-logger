@@ -1,0 +1,26 @@
+{
+  "name": "ioant-logger",
+  "version": "0.1.0",
+  "description": "",
+  "main": "logger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ioant"
+  ],
+  "author": "Adam Saxen",
+  "license": "MIT",
+  "bugs": {
+      "url" : "https://github.com/ioants/npm-package-logger/issues"
+  },
+  "repository" :
+  {
+    "type" : "git",
+    "url" : "https://github.com/ioants/npm-package-logger.git"
+  },
+  "dependencies" :
+      {
+          "winston": "^2.3.0"
+      }
+}
