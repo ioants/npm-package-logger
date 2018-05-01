@@ -15,7 +15,7 @@ module.exports.setup = function(log_path, log_level_test, log_level_production, 
         winston = new (winston.Logger)({
             transports: [
                 new (winston.transports.Console)({ level: log_level_console }),
-                new (winston.transports.File)({ filename: path.join(log_path_, 'output.log'), level: log_level_production })
+                new (winston.transports.File)({ filename: path.join(log_path, 'output.log'), level: log_level_production })
             ]
         });
     } else {
@@ -23,7 +23,7 @@ module.exports.setup = function(log_path, log_level_test, log_level_production, 
         winston = new (winston.Logger)({
             transports: [
                 new (winston.transports.Console)({ level: log_level_console}),
-                new (winston.transports.File)({ filename:path.join(log_path_, 'output_tests.log') , level: log_level_test })
+                new (winston.transports.File)({ filename:path.join(log_path, 'output_tests.log') , level: log_level_test })
             ]
         });
     }
