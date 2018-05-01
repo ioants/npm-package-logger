@@ -11,7 +11,6 @@ var path = require('path');
 module.exports = winston;
 
 module.exports.setup = function(log_path, log_level_test, log_level_production, log_level_console) {
-    log_path_ = path.join(process.cwd(), log_path);
     if (process.env.NODE_ENV !== 'test') {
         winston = new (winston.Logger)({
             transports: [
